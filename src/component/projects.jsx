@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import vote from "../img/vote.jpg";
 
 export default class Projects extends React.Component {
   render() {
@@ -28,7 +29,9 @@ export default class Projects extends React.Component {
                       id="vmarine-button"
                       className="project-button"
                       onClick={() => {
-                        console.log("clicked VOTE");
+                        var modalBG = document.getElementById("gallery-card");
+                        var marineModal = document.getElementById("vote");
+                        modalBG.style.display = "block";
                       }}
                     >
                       Coming Soon
@@ -80,6 +83,26 @@ export default class Projects extends React.Component {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        {/*hidden modals*/}
+        <div id="gallery-card">
+          <div id="vote" className="modal-card">
+            <div className="visual">
+              <img src={vote} alt="" />
+            </div>
+          </div>
+
+          <div id="agualuz" className="modal-card">
+            <div className="visual">
+              <img src={vote} alt="" />
+            </div>
+          </div>
+
+          <div id="todolist" className="modal-card">
+            <div className="visual">
+              <img src={vote} alt="" />
             </div>
           </div>
         </div>
