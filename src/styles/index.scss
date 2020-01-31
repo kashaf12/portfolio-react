@@ -153,23 +153,29 @@
 }
 
 .testbg { 
-    background-image: url("../img/Vmarine.jpg");
-    height: 400px; 
+    background-image: url("../img/vote.jpg");
+    height: 200px;
+    width: 350px; 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding:8px;
 }
 
 .aguabg { 
-    background-image: url("../img/aguaDeLuz.png");
-    height: 400px; 
+    background-image: url("../img/1ml.png");
+    height: 200px;
+    width: 350px;
     background-position: center;
+    padding:8px;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .todobg { 
-    background-image: url("../img/todolist.png");
-    height: 400px; 
+    background-image: url("../img/alma.png");
+    height: 200px;
+    padding:8px;
+    width: 350px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

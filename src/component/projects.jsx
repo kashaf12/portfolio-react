@@ -25,15 +25,7 @@ export default class Projects extends React.Component {
                     <h2>Vote</h2>
                   </div>
                   <div>
-                    <button
-                      id="vmarine-button"
-                      className="project-button"
-                      onClick={() => {
-                        var modalBG = document.getElementById("gallery-card");
-                        var marineModal = document.getElementById("vote");
-                        modalBG.style.display = "block";
-                      }}
-                    >
+                    <button id="vmarine-button" className="project-button">
                       Coming Soon
                     </button>
                   </div>
@@ -52,9 +44,13 @@ export default class Projects extends React.Component {
                     <button
                       id="agua-button"
                       className="project-button"
-                      onClick={() => {
-                        console.log("clicked 1ml");
-                      }}
+                      onClick={() =>
+                        window.open(
+                          "https://play.google.com/store/apps/details?id=com.medical.product&hl=en",
+
+                          "resizable=yes"
+                        )
+                      }
                     >
                       Link
                     </button>
@@ -74,9 +70,13 @@ export default class Projects extends React.Component {
                     <button
                       id="todo-button"
                       className="project-button"
-                      onClick={() => {
-                        console.log("clicked alma web");
-                      }}
+                      onClick={() =>
+                        window.open(
+                          "http://alma-web.herokuapp.com/",
+
+                          "resizable=yes"
+                        )
+                      }
                     >
                       Link
                     </button>
@@ -87,25 +87,6 @@ export default class Projects extends React.Component {
           </div>
         </div>
         {/*hidden modals*/}
-        <div id="gallery-card">
-          <div id="vote" className="modal-card">
-            <div className="visual">
-              <img src={vote} alt="" />
-            </div>
-          </div>
-
-          <div id="agualuz" className="modal-card">
-            <div className="visual">
-              <img src={vote} alt="" />
-            </div>
-          </div>
-
-          <div id="todolist" className="modal-card">
-            <div className="visual">
-              <img src={vote} alt="" />
-            </div>
-          </div>
-        </div>
       </React.Fragment>
     );
   }
