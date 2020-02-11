@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import vote from "../img/vote.jpg";
 
 export default class Projects extends React.Component {
   render() {
